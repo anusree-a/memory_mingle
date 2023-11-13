@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+}
+
+.containerHome {
+  width: 100%;
+  height: 100vh;
+  margin-top: -5px;
+
+  background-image: url("../../../public/Assets/home.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.hh1 {
+  font-family: "Cinzel Decorative", sans-serif;
+  text-align: center;
+  font-size: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #1f3346;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  animation: glowingText 2s infinite alternate;
+  margin-top: 5px;
+}
+
+@keyframes glowingText {
+  0% {
+    color: #41505f;
+  }
+  100% {
+    color: #0e60dc;
+  }
+}
+
+.btnWrap {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 200px;
+  gap: 45px;
+  align-items: center;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap");
+
+.btnh1 {
+  width: 250px;
+  height: 60px;
+  padding: 10px 20px;
+  color: #18191a;
+  font-size: larger;
+  border: none;
+  transition: transform 0.2s, box-shadow 0.2s;
+  text-transform: uppercase;
+  font-family: "Cinzel Decorative", sans-serif;
+  white-space: nowrap;
+  background: radial-gradient(circle, #646698 0%, #1a4f89 100%);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btnh1:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 9px 6px rgba(0, 0, 0, 1);
+}

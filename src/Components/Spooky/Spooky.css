@@ -1,0 +1,76 @@
+.container-spooky{
+ background-image: url("../../../public/Assets/spooky-back.jpg");
+  width: 100%;
+  height: 103vh;
+  margin-top: -22px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  overflow: hidden;
+ 
+ 
+}
+.hs1 {
+  position: relative;
+  animation: moveLeftRight 2s linear infinite;
+  color: rgb(175, 181, 182);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-family: 'Creepster', cursive;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+ 
+}
+
+@keyframes moveLeftRight {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(100px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+
+ 
+  
+  .btns1 {
+    width: 130px;
+    font-family: 'Creepster', cursive; 
+    font-size: 18px; 
+    text-transform: uppercase;
+    color:rgb(175, 181, 182);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    border: 2px solid rgb(14, 10, 10) ;
+    background: transparent;
+    border-radius: 5px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    text-align: center; 
+    display: block; 
+    margin-left: 715px; 
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+  .btns1:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 9px 1px rgba(0, 0, 0, 0.1);
+    
+  }
+  .card-grid{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+   margin-left: 70px;
+  align-items: center;
+  }
+  .turns{
+    text-align: center;
+    color: rgb(230, 231, 233);
+    font-size: 25px;
+    font-family: 'Creepster', cursive; 
+  }
